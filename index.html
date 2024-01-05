@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,300;1,400;1,500&display=swap");
+    </style>
+    <title>Tailwind css</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+          },
+          fontFamily: {
+            sans: ["Graphik", "sans-serif"],
+            serif: ["Merriweather", "serif"],
+            Gothic: ["Gothic A1", "sans-serif"],
+            Roboto: ["Roboto", "sans-serif"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="w-full min-h-[400px]">
+      <nav class="bg-[#52503B] m-auto">
+        <div
+          class="cont-box lg:w-[1048px] sm:w-full flex justify-between items-center py-[10px]"
+        >
+          <img src="./img/logo.svg" alt="logo" />
+          <div class="flex items-center justify-center gap-5">
+            <ul class="md:flex items-center justify-center gap-4 sm:hidden">
+              <li>
+                <a
+                  class="outline-none text-[#FFFFFF] text-[14px] hover:text-[#999] leading-5"
+                  href=""
+                  >Start</a
+                >
+                <a
+                  class="outline-none text-[#FFFFFF] text-[14px] hover:text-[#999] leading-5"
+                  href=""
+                  >Contact</a
+                >
+                <a
+                  class="outline-none text-[#FFFFFF] text-[14px] hover:text-[#999] leading-5"
+                  href=""
+                  >Our history</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="bg-[#FFF] text-[#52503B] text-[16px] rounded-[6px] px-[18px] py-[9px]"
+          >
+            Book now
+          </button>
+        </div>
+      </nav>
+
+      <div class="bg-hero">
+        <div
+          class="cont-box cont-box lg:w-[1048px] sm:w-full h-full flex flex-col justify-center items-center"
+        >
+          <div
+            class="flex flex-col items-center text-center justify-center gap-10"
+          >
+            <div
+              class="flex flex-col items-center text-center justify-center gap-8"
+            >
+              <img src="./img/logo.svg" alt="logo" />
+              <p class="text-[#FFFFFF] text-[48px] leading-13">
+                Experience the perfect combination of modern <br />
+                housing & natural scenery.
+              </p>
+              <p class="text-[#FFFFFF] text-[14px] uppercase leading-5">
+                Located in Lofoten, norway
+              </p>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
+                <path
+                  d="M46.875 39.375C46.875 48.6562 39.2812 56.25 30 56.25C20.7188 56.25 13.125 48.6562 13.125 39.375V20.625C13.125 11.3438 20.7188 3.75 30 3.75C39.2812 3.75 46.875 11.3438 46.875 20.625V39.375Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <line
+                  x1="30"
+                  y1="13"
+                  x2="30"
+                  y2="23"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="cont-box lg:w-[1048px] sm:w-full m-auto flex flex-col justify-center items-center gap-4 py-9"
+      >
+        <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+        <div class="flex justify-between gap-8 py-7">
+          <div class="">
+            <p class="text-[14px] text-[#333333] leading-5">
+              The Guest House is the perfect weekend get-away <br />
+              housing. Located in the Norwegian archipelago, <br />
+              Lofoten, it's a great escape from the hustle and <br />
+              bustle of the city. Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit. Nullam scelerisque <br />
+              aliquam odio et faucibus. Nulla rhoncus feugiat <br />
+              eros quis consectetur. Morbi neque ex, <br />
+              condimentum dapibus congue et, vulputate ut <br />
+              ligula.
+            </p>
+          </div>
+          <div class="flex flex-col gap-7">
+            <p class="text-[13px] text-[#333333]">
+              Below you'll find information about the <br />
+              accommodation and what's included in the price. <br />
+              Don't hesitate to reach out to us vi the contact page <br />
+              if you have any questions around your stay.
+            </p>
+            <button
+              class="w-[45%] bg-[#333] text-[#FFFFFF] text-[16px] rounded-[6px] px-[18px] py-[9px]"
+            >
+              Book now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="cont-box lg:w-[1048px] sm:w-full m-auto flex flex-col justify-center items-center gap-4 py-9"
+      >
+        <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+        <div>
+          <p class="text-[#52503B] text-[96px] text-center leading-24">
+            The Guest House is the <br />
+            perfect weekend <br />
+            getaway cabin.
+          </p>
+        </div>
+      </div>
+
+      <div class="back"></div>
+
+      <div class="Sleeping">
+        <div class="cont-box min-h-[330px] py-[30px]">
+          <div class="flex flex-col text-center justify-center items-center">
+            <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+            <p class="text-[#52503B] text-[32px]">Sleeping arrangements.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              <br />
+              scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
+              quis <br />
+              consectetur.
+            </p>
+          </div>
+          <div
+            class="flex gap-7 h-[150px] gap-[64px] judtify-center items-center"
+          >
+            <div
+              class="flex flex-col justify-center items-center py-[150px] gap-5"
+            >
+              <img class="w-[65px] h-[65px]" src="./img/beds.svg" alt="" />
+              <div
+                class="flex flex-col text-center justify-center items-center"
+              >
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Beds <br />
+                  The cabin is equipped with 12 beds, 4 of which <br />
+                  are in bunk. The rent includes linens for all beds.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+              <img class="w-[65px] h-[65px]" src="./img/bed.svg" alt="" />
+              <div
+                class="flex flex-col text-center justify-center items-center"
+              >
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Beds <br />
+                  The cabin is equipped with 12 beds, 4 of which <br />
+                  are in bunk. The rent includes linens for all beds.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5">
+              <img class="w-[65px] h-[65px]" src="./img/bat.svg" alt="" />
+              <div
+                class="flex flex-col text-center justify-center items-center"
+              >
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Beds <br />
+                  The cabin is equipped with 12 beds, 4 of which <br />
+                  are in bunk. The rent includes linens for all beds.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="cont-box min-h-[520px] lg:w-[1048px] sm:w-full py-[25px] gap-7"
+      >
+        <div class="flex flex-col gap-4">
+          <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+          <p class="text-[#52503B] text-[32px] leading-8">
+            The perfect escape.
+          </p>
+          <p class="text-[#52503B] text-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            <br />
+            scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
+            quis consectetur.
+          </p>
+        </div>
+
+        <div class="flex justify-between">
+          <div class="fle flex-col gap-7">
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fle flex-col gap-7">
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 py-[20px]">
+              <img src="./img/modern.svg" alt="" />
+              <div>
+                <p class="text-[#52503B] text-[14px] leading-5">
+                  Modern Kitchen Appliances
+                </p>
+                <p class="text-[#333] text-[14px] leading-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="past">
+        <div class="cont-box min-h-[530px] text-center m-auto gap-7">
+          <div
+            class="flex flex-col justify-center items-center text-center py-9"
+          >
+            <div class="w-[42px] h-[8px] bg-[#E08631] py-[15]"></div>
+            <p class="text-[#52503B] text-[32px] leading-9">Past guests.</p>
+            <p class="text-[#52503B] text-[16px] leading-6">
+              Don't take our word for it! Have a look at what our previous
+              guests say <br />
+              about their stay at the Guest House.
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <div
+              class="w-[600px] h-[266px] bg-white px-7 py-5 text-start gap-[20px]"
+            >
+              <div class="flex gap-2">
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+              </div>
+              <div class="flex flex-col gap-[20px]">
+                <p class="text-[#333] text-[14px] leading-5">
+                  We had an amazing stay at the Guest House!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Suspendisse varius <br />
+                  enim in eros elementum tristique. Duis cursus, mi quis viverra
+                  ornare, eros <br />
+                  dolor interdum nulla, ut commodo diam libero vitae erat.
+                  Aenean faucibus nibh et justo cursus id rutrum lorem
+                  imperdiet. Nunc <br />
+                  ut sem vitae risus tristique posuere.
+                </p>
+                <p>Nate Davidsson</p>
+              </div>
+            </div>
+
+            <div
+              class="w-[600px] h-[266px] bg-white px-7 py-5 text-start gap-[20px]"
+            >
+              <div class="flex gap-2">
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+                <img src="./img/yul.svg" alt="" />
+              </div>
+              <div class="flex flex-col gap-[20px]">
+                <p class="text-[#333] text-[14px] leading-5">
+                  We had an amazing stay at the Guest House!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Suspendisse varius <br />
+                  enim in eros elementum tristique. Duis cursus, mi quis viverra
+                  ornare, eros <br />
+                  dolor interdum nulla, ut commodo diam libero vitae erat.
+                  Aenean faucibus nibh et justo cursus id rutrum lorem
+                  imperdiet. Nunc <br />
+                  ut sem vitae risus tristique posuere.
+                </p>
+                <p>Nate Davidsson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bac1"></div>
+
+      <div
+        class="cont-box min-h-[320px] lg:w-[1048px] sm:w-full gap-7 py-[30px]"
+      >
+        <div class="flex justify-center items-center gap-7 py-[20px]">
+          <div class="w-[30%]">
+            <div class="flex flex-col gap-4">
+              <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+              <p class="text-[#52503B] text-[32px] leading-8">Come together.</p>
+              <p class="text-[#52503B] text-[16px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                <br />
+                scelerisque aliquam odio et faucibus.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-eraund gap-7">
+            <div class="flex flex-col justify-center gap-7">
+              <div class="flex gap-4">
+                <div class="py-[8.5px]">
+                  <img src="./img/wifi.svg" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="py-[8.5px]">
+                  <img src="./img/wifi.svg" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center gap-7">
+              <div class="flex gap-4">
+                <div class="py-[8.5px]">
+                  <img src="./img/wifi.svg" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="py-[8.5px]">
+                  <img src="./img/wifi.svg" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booked">
+        <div class="cont-box">
+          <div
+            class="text-center flex flex-col justify-center items-center py-[30px] gap-7"
+          >
+            <div class="w-[42px] h-[8px] bg-[#E08631]"></div>
+            <p class="text-[#52503B] text-[32px] leading-6 flex flex-col gap-1">
+              We're already booked up for the <br />
+              spring — hurry up & secure your <br />
+              stay for the summer.
+            </p>
+            <p class="text-[16px] text-[#52503B] leading-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              <br />
+              scelerisque aliquam odio et faucibus.
+            </p>
+          </div>
+          <div class="flex justify-center gap-4">
+            <button class="contact">Contact</button>
+            <button class="Book">Book now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="cont-box flex flex-col gap-7">
+          <div class="py-[30px] px-[15px] flex">
+              <div class=" w-[25%] flex flex-col gap-2">
+                <a class="text-white text-[14px] uppercase" href="">Pages</a>
+                <a class="text-[#fff] text-[14px]" href="">Start</a>
+                <a class="text-[#fff] text-[14px]" href="">Contact</a>
+                <a class="text-[#fff] text-[14px]" href="">Our history</a>
+                <a class="text-[#fff] text-[14px]" href="">Licenses</a>
+                <a class="text-[#fff] text-[14px]" href="">Instructions</a>
+                <a class="text-[#fff] text-[14px]" href="">Style guide</a>
+              </div>
+              <div class="w-[25%] flex flex-col gap-4">
+                <p class="text-[#fff] text-[14px] uppercase">Social Media</p>
+                <div class="flex gap-4">
+                  <img src="./img/1.svg" alt="" />
+                  <img src="./img/f.svg" alt="" />
+                  <img src="./img/ins.svg" alt="" />
+                </div>
+              </div>
+              <div class="w-[45%] gap-7">
+                <p class="text-[14px] text-[#fff]">
+                  NEWSLETTER <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius <br> enim in eros elementum tristique.
+                </p> <br>
+                <input class=" w-[70%] py-[9px] px-[9px] rounded-[10px]" placeholder="Email" type="email ">
+                <button class="w-[30] py-[9px] px-[9px] bg-[#222] text-[#fff] rounded-[10px]">Submit</button>
+              </div>
+          </div>
+          <div class="text-center flex flex-col justify-center items-center gap-7">
+            <img src="./img/logo.svg" alt="">
+            <p class="text-[#fff] text-[14px]">© Guest House, LLC. All rights reserved. Powered by Webflow</p>
+            <p class="text-[#fff] text-[14px]">+47 (0) 702 88 12 34
+              —
+              example@webflow.io
+              —
+              Klubbvika 12, 8310 Kabelvag, Norway</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,300;1,400;1,500&display=swap");
+.cont-box {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.bg-hero {
+  width: 100%;
+  height: 640px;
+  background-image: url(./img/house.jpg);
+  /* background-color: rgb(190, 153, 85);  */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.back {
+  width: 100%;
+  height: 640px;
+  background-image: url(./img/back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Sleeping{
+  width: 100%;
+  height: 640px;
+  background-color: #FAF8F0; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px){
+  .Sleeping{
+    width: 100%;
+    height: 640px;
+    background-color: #FAF8F0; 
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+ 
+}
+.past{
+  width: 100%;
+  height: 640px;
+  background: #FAF8F0; 
+  background-position: center;
+  background-size: cover;
+}
+.bac1 {
+  width: 100%;
+  height: 640px;
+  background-image: url(./img/bac1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.booked{
+  width: 100%;
+  min-height: 455px;
+  background: #FAF8F0; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact{
+  color: #52503B;
+  border: 4px solid #52503B;
+  padding: 16px 34px;
+}
+.Book{
+  color: #fff;
+  border: 4px solid #52503B;
+  padding: 16px 34px;
+  background-color: #52503B;
+}
+.footer{
+  width: 100%;
+  min-height: 600px;
+  background-color: #52503B;
+}
+
+
+
+
+
+
+
+
